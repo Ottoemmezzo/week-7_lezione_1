@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css"> 
+    <link rel="stylesheet" href="scss/app.css">
+    
+</head>
+<body>
+    <div class="container bg-secondary text-white p-2">
+        <div class="row m-1">
+            <div class="col-2">
+                    <input type="text" class="form-control" id="Nome" placeholder="nome...">    
+            </div>
+            <div class="col-2">     
+                <input type="text" class="form-control" id="Cognome" placeholder="cognome...">
+            </div>
+            <div class="col-2">     
+                <input type="date" class="form-control" id="Data" placeholder="Data di Nascita...">
+            </div>
+            <div class="col-2">    
+                <input type="text" class="form-control" id="Citta" placeholder="citta...">
+            </div>
+            <div class="col-auto">
+                <button type="button" class="btn btn-primary mb-3" id="inserisci" onclick="inserisci()">Inserisci</button>   
+            </div>
+            <div class="col-auto">    
+                <button type="button" class="btn btn-primary mb-3" onclick="cerca()" id="cerca">Cerca...</button>
+            </div>
+            <div class="col-2">    
+                <input type="text" class="form-control" id="cerca_input" placeholder="cerca...">
+            </div>
+            
+            <div class="col-12">
+                    <table class="table table-danger table-striped table-hover">
+                        <thead>
+                            <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Cognome</th>
+                            <th scope="col">Citta</th>
+                            <th scope="col">Data di Nascita</th>
+                            </tr>
+                        </thead>
+                        <tbody id="query">
+        
+                        </tbody>
+                    </table>    
+            </div>
+        </div>    
+         
+                     
+        <div class="container">
+            <table class="table table-success table-striped table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Cognome</th>
+                <th scope="col">Citta</th>
+                <th scope="col">Data di Nascita</th>
+                <th scope="col">Azione</th>
+              </tr>
+            </thead>
+            <tbody id="tabella">
+
+            </tbody>
+          </table>   
+        </div>
+        
+ 
+ 
+    </div>
+    
+    
+    <script src="js/script.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
